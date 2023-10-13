@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-image:url('/navbar/back.jpeg') ;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            width: 400px;
+            height: 650px;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto;
+            background-color: white;
+            border-radius: 10px;
+
+        }
+        .container p{
+            font-size: 14px;
+        }
+
+        form {
+            display: flex;
+            /* justify-content: center; */
+            /* align-items: center;  */
+            flex-direction: column;
+            width: 80%;
+
+            
+
+        }
+        form h1{
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        form label{
+            margin: 10px;
+            /* margin-right: 250px; */
+            
+        }
+        form input{
+            border: none;
+            outline: none;
+            padding: 10px;
+            transition: all ease 1s;
+        }
+        .set input:hover{
+            font-size: 20px;
+           
+        }
+
+        .set i{
+            font-size: 20px;
+            transition: all ease 1s;
+        }
+        .set:hover i{
+            /* font-size: 50px; */
+            transform: scale(1.5);
+            color:purple;
+        }
+
+        form p{
+            text-align: right;
+            margin: 20px;
+        }
+        form button{
+            padding: 10px;
+            border-radius: 20px ;
+            border: none;
+            background-image: linear-gradient(to right, rgb(18, 198, 214),rgb(203, 8, 203));
+            color: white;
+        }
+        .section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* flex-direction: column; */
+        }
+        .section p{
+            text-align: center;
+            margin: 30px;
+            font-size: 16px;
+        }
+        .icon{
+            display: flex;
+            justify-content: center;
+        }
+        .icon i{
+            padding: 10px;
+            font-size: 30px;
+            /* border-radius: 50%; */
+            transition: all ease 1s;
+        }
+        .icon i:hover{
+            font-size: 50px;
+            transform:scale(1.4) ;
+        }
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 50px;
+
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <h1>Login</h1>
+            <label>Username</label>
+            <div class="set">
+            <i class="fa-regular fa-user"></i>
+            <input type="text" placeholder="Type your username">
+        <hr width="100%">
+        </div>
+    
+        <label>Password</label>
+        <div class="set">
+            <i class="fa-solid fa-lock"></i>
+            <input type="text" placeholder="Type your Password">
+        <hr width="100%">
+        </div>
+    
+        <p>Forgot Password?</p>
+        <button>LOGIN</button>
+        <div class="section">
+            <p>Or sign Up Using</p>
+            
+        </div>
+        <div class="icon">
+            <i class="fa-brands fa-facebook" style="color: #246ef0;"></i>
+            <i class="fa-brands fa-twitter" style="color: #43bcf9;"></i>
+            <i class="fa-brands fa-google" style="color: #d91212;"></i>
+        </div>
+        <div class="footer">
+            <p>Or sign Up Using</p>
+            <h5>SIGN UP</h5>
+        </div>
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
